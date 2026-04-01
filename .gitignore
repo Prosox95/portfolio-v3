@@ -1,0 +1,5 @@
+# Ignorer le dossier des dépendances
+/vendor/
+
+# Ignorer le fichier des mots de passe
+.env
