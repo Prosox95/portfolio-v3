@@ -12,7 +12,7 @@
 <div class="layout-container">
     <aside class="sidebar">
         <div class="avatar-wrapper">
-            <img src="/PORTFOLIO-GEMINI/assets/img/pierre-avatar.png" alt="Pierre Burnier" class="avatar">
+            <img src="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.png" alt="Pierre Burnier" class="avatar">
         </div>
         
         <h1 class="sidebar-name">Pierre Burnier</h1>
@@ -50,12 +50,17 @@
     </aside>
 
     <main class="content-rectangle">
+        <?php 
+        // On utilise la variable $page directement nettoyée par le routeur (index.php)
+        // Fallback sur 'home' si jamais elle n'est pas définie
+        $current_page = isset($page) ? $page : 'home'; 
+        ?>
         <nav class="tabs-navigation">
-            <a href="/PORTFOLIO-GEMINI/home">Accueil</a>
-            <a href="/PORTFOLIO-GEMINI/projets">Projets</a>
-            <a href="/PORTFOLIO-GEMINI/competences">Compétences</a>
-            <a href="/PORTFOLIO-GEMINI/formation">Formations</a>
-            <a href="/PORTFOLIO-GEMINI/veille">Veille</a>
-            <a href="/PORTFOLIO-GEMINI/contact">Contact</a>
+            <a href="/PORTFOLIO-GEMINI/home" class="<?= $current_page == 'home' ? 'active' : '' ?>">Accueil</a>
+            <a href="/PORTFOLIO-GEMINI/projets" class="<?= ($current_page == 'projets' || $current_page == 'detail_projet') ? 'active' : '' ?>">Projets</a>
+            <a href="/PORTFOLIO-GEMINI/competences" class="<?= $current_page == 'competences' ? 'active' : '' ?>">Compétences</a>
+            <a href="/PORTFOLIO-GEMINI/formation" class="<?= $current_page == 'formation' ? 'active' : '' ?>">Formations</a>
+            <a href="/PORTFOLIO-GEMINI/veille" class="<?= $current_page == 'veille' ? 'active' : '' ?>">Veille</a>
+            <a href="/PORTFOLIO-GEMINI/contact" class="<?= $current_page == 'contact' ? 'active' : '' ?>">Contact</a>
         </nav>
         <div class="page-content">

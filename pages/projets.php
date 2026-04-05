@@ -17,7 +17,7 @@
                 <span class="p-badge">Tailwind CSS</span>
                 <span class="p-badge">MySQL</span>
             </div>
-            <a href="#" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/PORTFOLIO-GEMINI/projet/immogagnant" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -34,7 +34,7 @@
                 <span class="p-badge">JavaScript</span>
                 <span class="p-badge">Bootstrap</span>
             </div>
-            <a href="#" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/PORTFOLIO-GEMINI/projet/cnrs" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 

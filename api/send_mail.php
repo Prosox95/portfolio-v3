@@ -7,8 +7,7 @@ require '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// CHARGEMENT DU COFFRE-FORT (.env)
-// On dit à Dotenv de chercher le fichier .env dans le dossier parent (la racine)
+// CHARGEMENT DU .env
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
@@ -36,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         
-        // ICI LA MAGIE OPÈRE : ON UTILISE LES VARIABLES CACHÉES
+        // variable cachés dans le .env pour la sécurité
         $mail->Username   = $_ENV['SMTP_USER']; 
         $mail->Password   = $_ENV['SMTP_PASS']; 
         
