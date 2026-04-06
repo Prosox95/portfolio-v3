@@ -45,7 +45,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     messageDiv.className = 'form-message'; // Reset des classes
 
     // On envoie les données à notre script PHP
-    fetch('/PORTFOLIO-GEMINI/api/send_mail.php', {
+    fetch('/api/send_mail.php', {
         method: 'POST',
         body: formData
     })

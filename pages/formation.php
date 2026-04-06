@@ -6,7 +6,7 @@
         <h3 class="timeline-title">Stage Développement Web</h3>
         <p class="timeline-subtitle"><i class="fa-solid fa-building"></i> CNRS - Labo LCB (Campus Joseph Aiguier, Marseille)</p>
         <p class="timeline-desc">Stage de 6 semaines en développement web au sein du laboratoire LCB.</p>
-        <a href="/PORTFOLIO-GEMINI/projet/cnrs" class="btn-link-projet">Voir le projet en détail <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/projet/cnrs" class="btn-link-projet">Voir le projet en détail <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
     <div class="timeline-item">
@@ -14,7 +14,7 @@
         <h3 class="timeline-title">Développeur Web (Stage)</h3>
         <p class="timeline-subtitle"><i class="fa-solid fa-laptop-code"></i> Kinepso (Full Remote)</p>
         <p class="timeline-desc">Mission de 5 semaines axée sur la conception et le développement d'un logiciel SaaS.</p>
-        <a href="/PORTFOLIO-GEMINI/projet/kinepso" class="btn-link-projet">Voir le projet en détail <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/projet/kinepso" class="btn-link-projet">Voir le projet en détail <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </div>
 

@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio de Pierre Burnier, étudiant en BTS SIO (SLAM) développeur Full-Stack (PHP, Laravel, Python, Flutter) et passionné par l'Intelligence Artificielle.">
     <meta name="author" content="Pierre Burnier">
     
-    <link rel="icon" type="image/png" href="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.webp">
+    <link rel="icon" type="image/png" href="/assets/img/pierre-avatar-removebg.webp">
 
     <meta property="og:title" content="Pierre Burnier | Portfolio & Projets SaaS">
     <meta property="og:description" content="Découvrez mes projets SaaS, mon expertise en architecture logicielle (MVC, API REST) et ma vision du développement web.">
@@ -15,14 +15,14 @@
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
-    <link rel="stylesheet" href="/PORTFOLIO-GEMINI/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
 <div class="layout-container">
     <aside class="sidebar">
         <div class="avatar-wrapper">
-            <img src="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.webp" alt="Pierre Burnier" class="avatar">
+            <img src="/assets/img/pierre-avatar-removebg.webp" alt="Pierre Burnier" class="avatar">
         </div>
         
         <h1 class="sidebar-name">Pierre Burnier</h1>
@@ -71,7 +71,7 @@
             </div> -->
         </div>
 
-        <a href="/PORTFOLIO-GEMINI/assets/pdf/cv-pierre-burnier.pdf" class="btn-download" download>Télécharger mon CV</a>
+        <a href="/assets/pdf/cv-pierre-burnier.pdf" class="btn-download" download>Télécharger mon CV</a>
     </aside>
 
     <main class="content-rectangle">
@@ -81,11 +81,11 @@
         $current_page = isset($page) ? $page : 'home'; 
         ?>
         <nav class="tabs-navigation">
-            <a href="/PORTFOLIO-GEMINI/home" class="<?= $current_page == 'home' ? 'active' : '' ?>">Accueil</a>
-            <a href="/PORTFOLIO-GEMINI/projets" class="<?= ($current_page == 'projets' || $current_page == 'detail_projet') ? 'active' : '' ?>">Projets</a>
-            <a href="/PORTFOLIO-GEMINI/competences" class="<?= $current_page == 'competences' ? 'active' : '' ?>">Compétences</a>
-            <a href="/PORTFOLIO-GEMINI/formation" class="<?= $current_page == 'formation' ? 'active' : '' ?>">Formations</a>
-            <a href="/PORTFOLIO-GEMINI/veille" class="<?= $current_page == 'veille' ? 'active' : '' ?>">Veille</a>
-            <a href="/PORTFOLIO-GEMINI/contact" class="<?= $current_page == 'contact' ? 'active' : '' ?>">Contact</a>
+            <a href="/home" class="<?= $current_page == 'home' ? 'active' : '' ?>">Accueil</a>
+            <a href="/projets" class="<?= ($current_page == 'projets' || $current_page == 'detail_projet') ? 'active' : '' ?>">Projets</a>
+            <a href="/competences" class="<?= $current_page == 'competences' ? 'active' : '' ?>">Compétences</a>
+            <a href="/formation" class="<?= $current_page == 'formation' ? 'active' : '' ?>">Formations</a>
+            <a href="/veille" class="<?= $current_page == 'veille' ? 'active' : '' ?>">Veille</a>
+            <a href="/contact" class="<?= $current_page == 'contact' ? 'active' : '' ?>">Contact</a>
         </nav>
         <div class="page-content">

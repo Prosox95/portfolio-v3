@@ -7,7 +7,7 @@ $id_projet = isset($_GET['id']) ? $_GET['id'] : '';
 
 // 3. Sécurité : Si le projet n'existe pas, on dégage le mec vers la liste des projets
 if (!array_key_exists($id_projet, $mes_projets)) {
-    echo "<script>window.location.href='/PORTFOLIO-GEMINI/projets';</script>";
+    echo "<script>window.location.href='/projets';</script>";
     exit;
 }
 
@@ -15,7 +15,7 @@ if (!array_key_exists($id_projet, $mes_projets)) {
 $projet = $mes_projets[$id_projet];
 ?>
 
-<a href="/PORTFOLIO-GEMINI/projets" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-gold); text-decoration: none; font-weight: 700; margin-bottom: 2rem;">
+<a href="/projets" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary-gold); text-decoration: none; font-weight: 700; margin-bottom: 2rem;">
     <i class="fa-solid fa-arrow-left"></i> Retour aux projets
 </a>
 

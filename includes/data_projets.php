@@ -19,7 +19,7 @@ $mes_projets = [
         'intro' => 'Application mobile de productivité gamifiée : transformez vos habitudes en quêtes de RPG.',
         'description_longue' => 'Life RPG est l\'application qui fusionne développement personnel et mécaniques de jeu vidéo. L\'objectif est de hacker la motivation humaine grâce au système de récompense. Les utilisateurs accomplissent des tâches réelles pour gagner de l\'XP, monter de niveau, débloquer des items virtuels et grimper dans un classement social. Techniquement, le front-end cross-platform (iOS/Android) est développé en Flutter/Dart pour garantir des animations fluides. L\'infrastructure back-end repose sur Supabase (PostgreSQL, Authentification, Realtime) pour gérer la base de données et les interactions sociales instantanées de la communauté.',
         'images' => [
-            '/PORTFOLIO-GEMINI/assets/img/life-rpg-1.webp',
+            '/assets/img/life-rpg-1.webp',
         ],
         'lien_site' => '',
         'lien_github' => ''
@@ -32,13 +32,13 @@ $mes_projets = [
         'intro' => 'Couche d\'abstraction logicielle démocratisant l\'accès à un cluster de 18 GPU NVIDIA pour la recherche scientifique.',
         'description_longue' => 'Lors de mon stage au Laboratoire de Chimie Bactérienne (LCB), j\'ai piloté une transition numérique majeure. L\'accès au serveur de calcul haute performance (équipé de 18 GPU NVIDIA A40) se faisait exclusivement via terminal SSH, constituant une barrière technique chronophage pour les biologistes. J\'ai conçu et développé une interface d\'abstraction logicielle qui traduit les besoins des chercheurs en fichiers de configuration interprétables par le serveur (Slurm, YAML, Bash). Le back-end PHP orchestre la création dynamique d\'environnements isolés sous Conda et automatise l\'exécution des pipelines de segmentation d\'images. Cet outil a radicalement optimisé le workflow du laboratoire, garantissant une autonomie totale aux équipes de recherche.',
         'images' => [
-            '/PORTFOLIO-GEMINI/assets/img/cnrs-1.webp',
-            '/PORTFOLIO-GEMINI/assets/img/cnrs-2.webp',
-            '/PORTFOLIO-GEMINI/assets/img/cnrs-3.webp'
+            '/assets/img/cnrs-1.webp',
+            '/assets/img/cnrs-2.webp',
+            '/assets/img/cnrs-3.webp'
         ],
         'lien_site' => '',
         'lien_github' => '',
-        'lien_rapport' => '/PORTFOLIO-GEMINI/assets/pdf/rapport_cnrs.pdf'
+        'lien_rapport' => '/assets/pdf/rapport_cnrs.pdf'
     ],
     'kinepso' => [
         'titre' => 'Kinepso : SaaS Collaboratif (Stage)',
@@ -50,7 +50,7 @@ $mes_projets = [
         'images' => [], // Volontairement vide pour cause d'accord de confidentialité (NDA).
         'lien_site' => 'https://kinepso.com/',
         'lien_github' => '',
-        'lien_rapport' => '/PORTFOLIO-GEMINI/assets/pdf/rapport_kinepso.pdf'
+        'lien_rapport' => '/assets/pdf/rapport_kinepso.pdf'
     ],
     'eatsmart' => [
         'titre' => 'EatSmart : Plateforme E-commerce & API',
@@ -71,7 +71,7 @@ $mes_projets = [
         'intro' => 'Plateforme de conversion et d\'acquisition client pour un artisan marseillais.',
         'description_longue' => 'Un projet freelance de A à Z. L\'objectif n\'était pas juste de faire "un beau site", mais de générer du chiffre d\'affaires pour le client. J\'ai misé sur un design épuré en Tailwind CSS, un temps de chargement éclair, et surtout une architecture SEO Local agressive pour cibler les recherches sur Marseille. Le back-end PHP gère un formulaire de devis sécurisé relié directement au CRM de l\'artisan.',
         'images' => [
-            '/PORTFOLIO-GEMINI/assets/img/angelo-paysagiste-1.webp',
+            '/assets/img/angelo-paysagiste-1.webp',
         ],
         'lien_site' => 'https://www.angelopaysagiste.fr/',
         'lien_github' => ''

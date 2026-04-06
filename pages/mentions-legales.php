@@ -28,7 +28,7 @@
     </p>
 
     <div style="text-align: center; margin-top: 3rem;">
-        <a href="/PORTFOLIO-GEMINI/index.php" class="btn-project"><i class="fa-solid fa-arrow-left"></i> Retour au Portfolio</a>
+        <a href="/index.php" class="btn-project"><i class="fa-solid fa-arrow-left"></i> Retour au Portfolio</a>
     </div>
 
 </div>

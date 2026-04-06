@@ -18,7 +18,7 @@
                 <span class="p-badge">Tailwind CSS</span>
                 <span class="p-badge">MySQL</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/immogagnant" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/immogagnant" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
                 <span class="p-badge">Dart</span>
                 <span class="p-badge">UI/UX</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/liferpg" class="btn-project">VOIR LE PROJET <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/liferpg" class="btn-project">VOIR LE PROJET <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -55,7 +55,7 @@
                 <span class="p-badge">Tailwind CSS</span>
                 <span class="p-badge">SEO Local</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/paysagiste" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/paysagiste" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -74,7 +74,7 @@
                 <span class="p-badge">Slurm</span>
                 <span class="p-badge">Conda</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/cnrs" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/cnrs" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -93,7 +93,7 @@
                 <span class="p-badge">Stripe API</span>
                 <span class="p-badge">Docker</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/kinepso" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/kinepso" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -112,7 +112,7 @@
                 <span class="p-badge">MySQL</span>
                 <span class="p-badge">Architecture MVC</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/eatsmart" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/eatsmart" class="btn-project">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -131,7 +131,7 @@
                 <span class="p-badge">Supabase</span>
                 <span class="p-badge">GoRouter</span>
             </div>
-            <a href="/PORTFOLIO-GEMINI/projet/mobilealpha" class="btn-project">VOIR LE PROJET <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/projet/mobilealpha" class="btn-project">VOIR LE PROJET <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 
