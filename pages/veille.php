@@ -10,48 +10,47 @@
 </div>
 
 <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Articles étudiés</h2>
-
 <div class="articles-grid">
     
     <div class="article-card">
         <div class="article-header">
-            <span class="article-source">Le Monde Informatique</span>
-            <span class="article-date"><i class="fa-regular fa-calendar"></i> 12 Mars 2026</span>
+            <span class="article-source">InfoWorld</span>
+            <span class="article-date"><i class="fa-regular fa-calendar"></i> 22 Décembre 2025</span>
         </div>
         <div class="article-body">
-            <h4 class="article-title">Titre de l'article : L'impact de l'IA générative sur les architectures back-end</h4>
+            <h4 class="article-title">Les 6 percées majeures de l'IA qui redéfinissent l'écosystème en 2026</h4>
             
             <div class="article-notes">
                 <strong>Synthèse & Enjeux :</strong>
                 <ul>
-                    <li>L'IA modifie la façon dont les API sont structurées.</li>
-                    <li>Nouveaux défis liés à la sécurité des données (RGPD).</li>
-                    <li>Conclusion perso : il faut adapter nos méthodes de dev (Scrum).</li>
+                    <li>Transition massive des simples LLMs vers l'<strong>Agentic AI</strong> (agents autonomes capables d'exécuter des workflows complexes sans supervision).</li>
+                    <li>L'explosion de l'<strong>Edge AI</strong> : la capacité de faire tourner des modèles directement sur les appareils locaux (mobiles, IoT) pour réduire la latence.</li>
+                    <li><strong>Mon analyse :</strong> Le rôle du développeur évolue de "codeur d'API" à "orchestrateur d'agents IA". C'est pour maîtriser cette architecture que je vise un Master Bac+5. L'Edge AI impactera aussi directement la façon dont je conçois mes applications mobiles en Flutter.</li>
                 </ul>
             </div>
             
-            <a href="#" target="_blank" class="btn-read">Lire l'article source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html" target="_blank" class="btn-read">Lire l'article source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     </div>
 
     <div class="article-card">
         <div class="article-header">
-            <span class="article-source">Journal du Net</span>
-            <span class="article-date"><i class="fa-regular fa-calendar"></i> 05 Février 2026</span>
+            <span class="article-source">Capital.fr</span>
+            <span class="article-date"><i class="fa-regular fa-calendar"></i> 5 Avril 2026</span>
         </div>
         <div class="article-body">
-            <h4 class="article-title">Titre de l'article : Big Data en 2026, quelles sont les bases de données les plus adaptées ?</h4>
+            <h4 class="article-title">Finance & Big Data : l'IA est la nouvelle alliée stratégique des investisseurs</h4>
             
             <div class="article-notes">
                 <strong>Synthèse & Enjeux :</strong>
                 <ul>
-                    <li>Comparaison entre le SQL traditionnel et le NoSQL pour l'IA.</li>
-                    <li>Coûts de traitement des données en augmentation.</li>
-                    <li>Conclusion perso : SQL reste robuste, mais le NoSQL devient vital.</li>
+                    <li>L'IA prédictive et le machine learning surpassent l'analyse humaine pour traiter des volumes massifs de données financières et déceler des signaux faibles.</li>
+                    <li>La rentabilité d'un modèle d'investissement repose désormais entièrement sur la qualité du <strong>Data Engineering</strong> (collecte, nettoyage et structuration de la donnée).</li>
+                    <li><strong>Mon lien pro :</strong> Cet article valide l'exact modèle économique de mon SaaS <strong>ImmoGagnant</strong>. L'application de l'IA sur de la donnée brute (scraping) pour automatiser la recherche de rentabilité est le marché le plus porteur de la décennie.</li>
                 </ul>
             </div>
             
-            <a href="#" target="_blank" class="btn-read">Lire l'article source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://www.capital.fr/entreprises-marches/bourse-lintelligence-artificielle-est-la-nouvelle-alliee-des-investisseurs-en-actions-1525296" target="_blank" class="btn-read">Lire l'article source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     </div>
 

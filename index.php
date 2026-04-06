@@ -1,7 +1,7 @@
 <?php
 // 1. LA LISTE BLANCHE (Sécurité absolue)
 // Seules ces pages ont le droit d'être chargées.
-$pages_autorisees = ['home', 'projets', 'competences', 'formation', 'veille', 'contact', 'detail_projet'];
+$pages_autorisees = ['home', 'projets', 'competences', 'formation', 'veille', 'contact', 'detail_projet', 'mentions-legales'];
 
 // 2. RÉCUPÉRATION DE LA PAGE DEMANDÉE DANS L'URL
 // Si aucune page n'est demandée, on charge 'home' par défaut.

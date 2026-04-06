@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pierre Burnier - Développeur Web</title>
+    <title>Pierre Burnier | Développeur Full-Stack, Étudiant & Passionné d'IA</title>
+    <meta name="description" content="Portfolio de Pierre Burnier, étudiant en BTS SIO (SLAM) développeur Full-Stack (PHP, Laravel, Python, Flutter) et passionné par l'Intelligence Artificielle.">
+    <meta name="author" content="Pierre Burnier">
+    
+    <link rel="icon" type="image/png" href="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.webp">
+
+    <meta property="og:title" content="Pierre Burnier | Portfolio & Projets SaaS">
+    <meta property="og:description" content="Découvrez mes projets SaaS, mon expertise en architecture logicielle (MVC, API REST) et ma vision du développement web.">
+    <meta property="og:image" content="https://pierreburnier.dev/assets/img/og-preview.png">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
     <link rel="stylesheet" href="/PORTFOLIO-GEMINI/css/style.css">
 </head>
 <body>
@@ -12,7 +22,7 @@
 <div class="layout-container">
     <aside class="sidebar">
         <div class="avatar-wrapper">
-            <img src="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.png" alt="Pierre Burnier" class="avatar">
+            <img src="/PORTFOLIO-GEMINI/assets/img/pierre-avatar-removebg.webp" alt="Pierre Burnier" class="avatar">
         </div>
         
         <h1 class="sidebar-name">Pierre Burnier</h1>
@@ -30,20 +40,35 @@
         <div class="contact-box">
             <div class="contact-item">
                 <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <span class="contact-text">+33 7 81 58 82 55</span>
+                <a href="tel:+33781588255" class="contact-text" style="text-decoration: none; color: inherit;">+33 7 81 58 82 55</a>
             </div>
+
             <div class="contact-item">
                 <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                <span class="contact-text">pierreburnier07@gmail.com</span>
+                <a href="mailto:pierreburnier07@gmail.com" class="contact-text" style="text-decoration: none; color: inherit;">pierreburnier07@gmail.com</a>
             </div>
             <div class="contact-item">
                 <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <span class="contact-text">Marseille, France</span>
             </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-car"></i></div>
+                <span class="contact-text">Permis B & Véhiculé</span>
+            </div>
             <div class="contact-item no-border">
                 <div class="contact-icon"><i class="fa-solid fa-calendar-days"></i></div>
                 <span class="contact-text">7 Mars 2005</span>
             </div>
+            <!-- <div class="languages-badges">
+                <div class="lang-tag">
+                    <span class="fi fi-fr lang-flag"></span>
+                    <span>FR (Natif)</span>
+                </div>
+                <div class="lang-tag">
+                    <span class="fi fi-gb lang-flag"></span>
+                    <span>EN (Technique)</span>
+                </div>
+            </div> -->
         </div>
 
         <a href="/PORTFOLIO-GEMINI/assets/pdf/cv-pierre-burnier.pdf" class="btn-download" download>Télécharger mon CV</a>

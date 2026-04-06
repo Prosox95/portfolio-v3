@@ -13,6 +13,21 @@
     box-sizing: border-box;
 }
 
+/* --- MASQUER LA BARRE DE DÉFILEMENT (Tout en gardant le scroll actif) --- */
+
+/* Pour Chrome, Safari, Opera et Edge (moteur WebKit/Blink) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Pour Firefox et les anciens navigateurs */
+html,
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE et Edge Legacy */
+}
+
 html,
 body {
     overflow-x: hidden; /* Empêche physiquement la page de déborder sur les côtés */
@@ -53,6 +68,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-rectangle {
+    /* ... garde tout ton CSS existant pour cette classe ... */
+
+    /* LA LIGNE MAGIQUE POUR SAUVER CSS GRID : */
+    min-width: 0;
+
+    /* Et une petite sécurité pour couper les longs mots si besoin : */
+    overflow-wrap: break-word;
 }
 
 .sidebar,
@@ -154,6 +179,13 @@ body {
     border-bottom: none;
 }
 
+/* --- CORRECTION DU DÉBORDEMENT DE TEXTE --- */
+.contact-text {
+    overflow-wrap: anywhere; /* Autorise le texte à se couper s'il touche le bord */
+    word-break: break-word; /* Sécurité supplémentaire pour les vieux navigateurs */
+    line-height: 1.4; /* On aère un peu au cas où ça passe sur deux lignes */
+}
+
 .contact-icon {
     background: #e3dbcc; /* Le petit fond gris/beige pour l'icône */
     width: 35px;
@@ -165,6 +197,36 @@ body {
     margin-right: 1rem;
     color: var(--text-dark);
     flex-shrink: 0;
+}
+
+/* --- BADGES LINGUISTIQUES (Sidebar) --- */
+.languages-badges {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lang-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    background: var(--bg-body);
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+    cursor: default;
+}
+
+/* Le style spécifique pour le drapeau */
+.lang-flag {
+    font-size: 2rem; /* Taille du drapeau */
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
 }
 
 /* --- BOUTON CV --- */
@@ -367,7 +429,7 @@ body {
 /* --- GRILLE DES COMPÉTENCES --- */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -433,9 +495,8 @@ body {
 
 .mindset-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); /* Force strictement 2 colonnes ! */
+    gap: 2rem;
 }
 
 .mindset-item {
@@ -704,6 +765,26 @@ textarea.form-control {
     box-shadow: 0 10px 20px rgba(184, 150, 80, 0.1);
 }
 
+.project-ribbon {
+    position: absolute;
+    top: 25px;
+    left: -45px;
+    background: #e3dbcc; /* Ton beige 'parchemin' */
+    color: var(--text-dark);
+    padding: 6px 40px;
+    width: 190px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: rotate(-45deg);
+    border-top: 2px solid var(--text-dark); /* DA RPG */
+    border-bottom: 2px solid var(--text-dark);
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Le Badge de Statut en haut à droite */
 .project-status {
     position: absolute;
@@ -734,10 +815,16 @@ textarea.form-control {
     border-bottom: 1px solid #e3dbcc;
 }
 
+.project-header {
+    margin-top: 1.8rem;
+    padding-left: 0.5rem;
+}
+
 .project-header h3 {
     color: var(--text-dark);
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .project-date {
@@ -746,6 +833,7 @@ textarea.form-control {
     font-weight: 600;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
 }
 
@@ -799,6 +887,66 @@ textarea.form-control {
 .btn-project:hover {
     background: var(--text-dark);
     color: white;
+}
+
+/* --- UNIFICATION DA 3D : GALERIE DE PROJETS (Version intelligente) --- */
+.projet-galerie {
+    display: grid;
+    /* On garde une grille flexible pour l'organisation générale */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem; /* Un bel espace entre les 'loots' */
+    margin-bottom: 2.5rem;
+
+    /* TRICK 1 : On aligne les éléments au début de leur cellule, pas centrés, 
+       pour que les cartes de tailles différentes soient bien rangées */
+    align-items: start;
+
+    /* TRICK 2 : On centre les éléments horizontalement dans leur cellule grille */
+    justify-items: center;
+}
+
+/* NOUVEAU CONTENEUR : La "Carte de Loot" s'adapte à l'image */
+.projet-img-card {
+    background-color: #fdfbf7;
+    border: 3px solid var(--text-dark); /* Bordure épaisse RPG */
+    border-radius: 6px;
+    box-shadow: 6px 6px 0px var(--primary-gold); /* Ombre 3D */
+    overflow: hidden;
+
+    /* SOLUTION : On supprime aspect-ratio: 1/1 ! */
+
+    /* TRICK 3 : On force le conteneur à ne pas être plus large que l'image 
+       qu'il contient (shrink-wrap) */
+    display: inline-block;
+    width: auto;
+
+    transition: all 0.2s ease;
+}
+
+/* Effet au survol (loot) sur la CARTE entière */
+.projet-img-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--primary-gold);
+}
+
+/* STYLISATION DE L'IMAGE DANS LA CARTE */
+.projet-detail-img {
+    display: block; /* Supprime l'espace fantôme sous l'image */
+    width: auto;
+    max-width: 100%; /* L'image s'adapte à la largeur max de sa carte */
+    height: auto;
+
+    /* TRICK 4 : On met une hauteur max raisonnable pour ne pas que les 
+       screenshots de téléphone prennent toute la hauteur de la page. 
+       500px est un bon compromis pour un portfolio. */
+    max-height: 500px;
+
+    object-fit: contain; /* Toujours visible en entier, sans zoom */
+
+    /* Nettoyage des anciennes propriétés */
+    margin: 0;
+    border: none;
+    box-shadow: none;
 }
 
 /* --- UNIFICATION DA 3D : CARTES --- */
@@ -864,9 +1012,59 @@ textarea.form-control {
     transform: translate(3px, 3px);
     box-shadow: 0px 0px 0px transparent;
 }
+
+/* --- FOOTER --- */
+.site-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 2px dashed #d1c5b4; /* Rappel de tes lignes pointillées */
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.legal-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.legal-link:hover {
+    color: var(--primary-gold);
+    text-decoration: underline;
+}
 /* ==========================================================================
    RESPONSIVE DESIGN (MOBILES, TABLETTES & PETITS ÉCRANS) 
    ========================================================================== */
+
+/* --- POINT DE RUPTURE INTERMÉDIAIRE (PC Portables 13/15" : 1100px - 1400px) --- */
+@media (min-width: 1100px) and (max-width: 1400px) {
+    /* On sacrifie la symétrie 2x2 avant que le layout ne se brise */
+    .mindset-grid,
+    .skills-container,
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* On réduit légèrement l'espacement pour que le contenu respire */
+    .skills-container {
+        gap: 1.5rem;
+    }
+
+    .tabs-navigation {
+        gap: 0.5rem; /* On resserre l'espace entre les boutons */
+        justify-content: center; /* On les centre si jamais ils passent sur 2 lignes */
+        flex-wrap: wrap;
+    }
+
+    .tabs-navigation a {
+        padding: 0.5rem 1rem; /* On réduit le padding interne des boutons */
+        font-size: 0.85rem; /* On diminue un poil la taille du texte */
+    }
+}
 
 @media (max-width: 1100px) {
     /* On déclenche le mode mobile plus tôt ! */

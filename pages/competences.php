@@ -50,20 +50,20 @@
 <div class="mindset-section">
     <div class="mindset-grid">
         <div class="mindset-item">
-            <h4><i class="fa-solid fa-fire-flame-curved"></i> Culture du Résultat</h4>
-            <p>Doté d'une forte mentalité d'entrepreneur, je suis littéralement obsédé par la livraison du produit et l'atteinte des objectifs. Je ne lâche rien tant que le code n'est pas propre et fonctionnel.</p>
+            <h4><i class="fa-solid fa-fire-flame-curved"></i> Orienté Produit</h4>
+            <p>Je conçois le développement comme un moyen de résoudre des problèmes concrets. Mon objectif n'est pas seulement d'écrire du code, mais de livrer des applications logicielles fonctionnelles, fiables et centrées sur les besoins réels de l'utilisateur final.</p>
         </div>
         <div class="mindset-item">
-            <h4><i class="fa-solid fa-hammer"></i> Détermination & Persévérance</h4>
-            <p>Face à un bug ou une technologie inconnue, je ne recule pas. Je suis d'un naturel curieux et je fouille la documentation jusqu'à maîtriser le sujet et trouver la solution optimale.</p>
+            <h4><i class="fa-solid fa-hammer"></i> Résolution de Problèmes</h4>
+            <p>Face à un obstacle technique, j'adopte une approche méthodique. L'analyse des erreurs et la recherche approfondie dans la documentation sont pour moi des étapes logiques qui garantissent un apprentissage continu face aux nouvelles technologies.</p>
         </div>
         <div class="mindset-item">
-            <h4><i class="fa-solid fa-lightbulb"></i> Créativité Technique</h4>
-            <p>Le développement, ce n'est pas que taper des lignes. C'est concevoir des architectures, modéliser des bases de données et trouver des solutions élégantes à des problèmes complexes.</p>
+            <h4><i class="fa-solid fa-lightbulb"></i> Rigueur & Architecture</h4>
+            <p>La pérennité d'un projet repose sur ses fondations. J'accorde une importance majeure à la phase de conception préliminaire : modélisation rigoureuse des bases de données et structuration évolutive du back-end avant d'entamer le développement.</p>
         </div>
         <div class="mindset-item">
-            <h4><i class="fa-solid fa-users"></i> Esprit d'Équipe (Scrum)</h4>
-            <p>Le code solo a ses limites. J'excelle dans le travail collaboratif, la communication avec mes pairs et l'organisation Agile pour faire avancer le projet collectivement.</p>
+            <h4><i class="fa-solid fa-users"></i> Intégration & Travail d'équipe</h4>
+            <p>Le développement moderne est un effort collectif. Je valorise la clarté des échanges techniques, les revues de code constructives et l'utilisation rigoureuse des outils de versioning (Git) pour garantir une collaboration fluide et efficace.</p>
         </div>
     </div>
 </div>

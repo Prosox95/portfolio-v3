@@ -30,6 +30,17 @@ $projet = $mes_projets[$id_projet];
     </div>
     
     <div class="project-body">
+        
+        <?php if (!empty($projet['images']) && is_array($projet['images'])): ?>
+            <div class="projet-galerie">
+                <?php foreach($projet['images'] as $img): ?>
+                    <div class="projet-img-card">
+                        <img src="<?php echo $img; ?>" alt="Aperçu du projet <?php echo $projet['titre']; ?>" class="projet-detail-img">
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+
         <div class="project-techs">
             <?php foreach($projet['techs'] as $tech): ?>
                 <span class="p-badge"><?php echo $tech; ?></span>
@@ -42,9 +53,24 @@ $projet = $mes_projets[$id_projet];
         <h3 style="margin-top: 1rem; margin-bottom: 0.5rem; color: var(--primary-gold);">Détails Techniques</h3>
         <p class="project-desc"><?php echo $projet['description_longue']; ?></p>
         
-        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-            <a href="<?php echo $projet['lien_github']; ?>" class="btn-project" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
-            <a href="<?php echo $projet['lien_site']; ?>" class="btn-project" target="_blank"><i class="fa-solid fa-globe"></i> Visiter le site</a>
+        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+                
+                <?php if (!empty($projet['lien_rapport'])): ?>
+                    <a href="<?php echo $projet['lien_rapport']; ?>" class="btn-project" target="_blank" style="background: var(--text-dark); color: var(--bg-body);"><i class="fa-solid fa-file-pdf"></i> Lire le rapport</a>
+                <?php endif; ?>
+
+                <?php if (!empty($projet['lien_github'])): ?>
+                    <a href="<?php echo $projet['lien_github']; ?>" class="btn-project" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                <?php endif; ?>
+
+                <?php if (!empty($projet['lien_site'])): ?>
+                    <a href="<?php echo $projet['lien_site']; ?>" class="btn-project" target="_blank"><i class="fa-solid fa-globe"></i> Visiter le site</a>
+                <?php endif; ?>
+                
+            </div>
+            
         </div>
     </div>
 </div>
